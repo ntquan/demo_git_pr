@@ -37,5 +37,12 @@ class TestCalculateFunctions(unittest.TestCase):
         self.assertEqual(subtract(-1, -1), 0)
         self.assertEqual(subtract(10, 5), 5)
 
+    def test_add_function(self):
+        from main import add_function
+        self.assertEqual(add_function(5, 3), 8)
+        self.assertEqual(add_function(0, 0), 0)
+        self.assertEqual(add_function(-1, -1), -2)
+        self.assertEqual(add_function(10, 5), 15)
+
 if __name__ == '__main__':
     unittest.main()
