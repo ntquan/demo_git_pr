@@ -31,6 +31,12 @@ def add_function(a, b):
     """Cộng hai số a và b."""
     return a + b
 
+def check_positive_integer(n):
+    """Kiểm tra xem n có phải là số nguyên dương hay không."""
+    if not isinstance(n, int) or n <= 0:
+        raise ValueError("Số phải là số nguyên dương.")
+    return True
+
 # Main function
 if __name__ == "__main__":
     numbers = get_numbers_from_user()
