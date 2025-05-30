@@ -19,5 +19,15 @@ class TestCalculateFunctions(unittest.TestCase):
         with self.assertRaises(ValueError):
             calculate_sum_and_average(["a", "b", "c"])
 
+    def test_get_numbers_from_user_valid(self):
+        # This test is not practical to run automatically since it requires user input.
+        # Instead, we can mock the input function to simulate user input.
+        with unittest.mock.patch('builtins.input', return_value='1 2 3'):
+            numbers = get_numbers_from_user()
+            self.assertEqual(numbers, [1, 2, 3])
+
+    def test_valid_numbers(self):
+        self.assertEqual(calculate_sum_and_average([1, 2, 4]), (6, 2.0))
+
 if __name__ == '__main__':
     unittest.main()
