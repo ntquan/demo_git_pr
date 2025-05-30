@@ -23,9 +23,9 @@ class TestCalculateFunctions(unittest.TestCase):
     def test_get_numbers_from_user_valid(self):
         # This test is not practical to run automatically since it requires user input.
         # Instead, we can mock the input function to simulate user input.
-        with patch('builtins.input', return_value='1 2 3'):
+        with patch('builtins.input', return_value='1 2 3 4'):
             numbers = get_numbers_from_user()
-            self.assertEqual(numbers, [1, 2, 3])
+            self.assertEqual(numbers, [1, 2, 3, 4])
 
     def test_valid_numbers_2(self):
         self.assertEqual(calculate_sum_and_average([1, 2, 4]), (7, 2.3333333333333335))
