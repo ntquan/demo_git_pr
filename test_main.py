@@ -42,7 +42,7 @@ class TestCalculateFunctions(unittest.TestCase):
         self.assertEqual(add_function(5, 3), 8)
         self.assertEqual(add_function(0, 0), 0)
         self.assertEqual(add_function(-1, -1), -2)
-        self.assertEqual(add_function(10, 5), 10)
+        self.assertEqual(add_function(10, 5), 15)
 
 if __name__ == '__main__':
     unittest.main()
