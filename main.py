@@ -27,6 +27,10 @@ def subtract(a, b):
     """Trừ hai số a và b."""
     return a - b
 
+def add_function(a, b):
+    """Cộng hai số a và b."""
+    return a + b
+
 # Main function
 if __name__ == "__main__":
     numbers = get_numbers_from_user()
