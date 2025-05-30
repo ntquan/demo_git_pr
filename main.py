@@ -23,6 +23,10 @@ def get_numbers_from_user():
         except ValueError as e:
             print(f"Lỗi: {e}. Vui lòng nhập lại.")
 
+def subtract(a, b):
+    """Trừ hai số a và b."""
+    return a - b
+
 # Main function
 if __name__ == "__main__":
     numbers = get_numbers_from_user()

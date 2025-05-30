@@ -30,5 +30,12 @@ class TestCalculateFunctions(unittest.TestCase):
     def test_valid_numbers_2(self):
         self.assertEqual(calculate_sum_and_average([1, 2, 4]), (7, 2.3333333333333335))
 
+    def test_subtract_function(self):
+        from main import subtract
+        self.assertEqual(subtract(5, 3), 2)
+        self.assertEqual(subtract(0, 0), 0)
+        self.assertEqual(subtract(-1, -1), 0)
+        self.assertEqual(subtract(10, 5), 4)
+
 if __name__ == '__main__':
     unittest.main()
